@@ -36,7 +36,7 @@ class CalendarsController < ApplicationController
         today_plans.push(plan.plan) if plan.date == @todays_date1 + x
       end
 
-      wday_num = @todays_date2
+      wday_num = @todays_date2 + x
       if wday_num >= 7
         wday_num = wday_num -7
       end
